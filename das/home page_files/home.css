@@ -1,0 +1,96 @@
+/* main home page style sheet */
+
+		#header {
+		height:60px;
+		margin:0 auto; 
+		}
+		#content{
+		min-height:125px;
+		}
+		#footer {
+		width:100%;
+		height:90px;
+		margin:0 auto; 
+		background-color:black;
+		position:absolute;
+		bottom:auto;
+		}
+		#menu {
+		height:37px;
+		margin:0 auto;
+		background-color:#3577AC;
+		}
+		ul{
+			list-style-type:none;
+			margin:auto;
+			padding:0;
+			overflow:hidden;
+			display:table;
+		}
+		li{
+			float:left;
+		}
+		#anchor:link,#anchor:visited{
+			display:block;
+			width:130px;
+			font-family:corbel;
+			font-weight:light;
+			font-size:16.9px;
+			color:#FFFFFF;
+			background-color:#3577AC;
+			text-align:center;
+			padding:8px;
+			text-decoration:none;
+			text-transform:uppercase;
+		}
+		#anchor:hover,#anchor:active
+		{
+			background-color:#66CCFF;
+		}
+		
+		#first:hover #anchor {
+		background-color:#66CCFF;
+		} 
+		#second:hover  li:hover #anchor
+		{
+		background-color:#3577AC;
+		} 
+		#first:hover #second{
+			display:block;
+			z-index:1000;
+		}
+		#second{
+		display:none;
+		}
+		#second li {
+			display:block;
+			clear:both;
+			position:relative;
+			border-top: 1px solid white;
+		}
+		ul li ul li #anchor{
+		z-index:1000;
+		}
+		body{
+			margin:0px;
+			padding:0px;
+			}
+
+		#loginbutton 
+			{
+				background: #3577AC url(../img/overlay.png) repeat-x;
+				padding: 8px 20px 8px;
+				color: #fff;
+				text-decoration: none;
+				-moz-border-radius: 5px;
+				-webkit-border-radius: 5px;
+				-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+				-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+				text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+				cursor: pointer;
+				float:right;
+				margin-right:70px;
+				font-size:18px;
+				margin-top:15px;
+				border:0px;
+			}
